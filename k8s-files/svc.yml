@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: test-app-svc
+spec:
+  selector:
+    app: test-app
+  type: NodePort
+  ports:
+  - port: 5000
+    targetPort:  5000

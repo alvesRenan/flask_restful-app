@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-app
+  labels:
+    app: test-app
+spec:
+  selector:
+    matchLabels: 
+      app: test-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: test-app
+    spec:
+      containers:
+      - image:  renanalves/test-app:TAG-VERSION
+        imagePullPolicy: Always
+        name:  test-app
+        ports:
+        - containerPort:  5000
