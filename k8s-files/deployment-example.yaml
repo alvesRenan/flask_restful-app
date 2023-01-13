@@ -15,7 +15,7 @@ spec:
         app: test-app
     spec:
       containers:
-      - image:  renanalves/test-app:TAG-VERSION
+      - image:  renanalves/test-app
         imagePullPolicy: Always
         name:  test-app
         ports:
