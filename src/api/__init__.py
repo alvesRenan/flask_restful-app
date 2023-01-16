@@ -7,8 +7,7 @@ from .tasks import *
 service = Api( app_instance )
 
 routes = [
-  { 'resource': Status, 'path': '/status'},
-  { 'resource': ChangeStatus, 'path': '/change-status'}
+  { 'resource': Status, 'path': '/status'}
 ]
 
 for route in routes:
